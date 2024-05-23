@@ -10,6 +10,9 @@ Interrogates data from known city csv files and provides statistics on ride shar
 ### Files used
 bikedataproject.py
 
+### Software Required
+Notepad++ or other file editing program
+
 ### Credits
 Udacity
 
