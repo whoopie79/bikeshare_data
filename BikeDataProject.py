@@ -73,14 +73,14 @@ def load_data(city, month, day):
         # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
 
-    # convert the Start Time column to datetime
+    # convert the Start Time column to datetime for processing
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
-    # filter by month if applicable
+    # Check if text enetered  was 'all' or filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
         months = ['january', 'february', 'march', 'april', 'may', 'june']
