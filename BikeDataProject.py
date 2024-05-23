@@ -1,8 +1,10 @@
+# Required library for correct operation
 import time
 import calendar
 import pandas as pd
 import numpy as np
 
+#Declared dictionary of allowed cities. Add or remove cities as more data becomes available
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
