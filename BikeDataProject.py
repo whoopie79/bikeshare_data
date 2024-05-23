@@ -19,7 +19,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     
-    # Select City to filter by. If invalid city selected, repeat question
+    # This part of the code selects a City to filter by. If invalid city selected, repeat question
     valid_ans = False
     while valid_ans == False:
         c = input("Please enter your city of choice. Select from Chicago, New York City or Washington: ")
@@ -30,7 +30,7 @@ def get_filters():
             print("You have selected, {}".format(city))
             valid_ans = True
 
-    #  Select Month to filter by. If invalid month selected, repeat question
+    #  This part of the code selects a Month to filter by. If invalid month selected, repeat question
     valid_ans = False
     while valid_ans == False:
         m = input("Please select month (all, january, february, ... , june): ")
@@ -42,7 +42,7 @@ def get_filters():
             print("You have selected, {}".format(month))
             valid_ans = True
 
-    # Select Day to filter by. If invalid day selected, repeat question
+    # This part of the code selects a Day to filter by. If invalid day selected, repeat question
     valid_ans = False
     while valid_ans == False:
         d = input("Please select day (all, monday, tuesday, ... , sunday): ")
